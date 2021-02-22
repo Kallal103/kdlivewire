@@ -9,9 +9,10 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Livewire</title>
     <livewire:styles />
+    <livewire:scripts />
 </head>
 <body>
     <livewire:comments />
-    <livewire:scripts />
+
 </body>
 </html>

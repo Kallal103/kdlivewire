@@ -5,13 +5,23 @@ namespace App\Http\Livewire;
 use App\Comment;
 use Carbon\Carbon;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 use Livewire\WithPagination;
 
 class Comments extends Component
 {
 
     use WithPagination;
+    use WithFileUploads;
     public $newComment;
+    public $image;
+
+    protected $listeners = ['fileUpload' => 'handleFileUpload'];
+
+    public function handleFileUpload($imageData)
+    {
+        $this->image = $imageData;
+    }
 
 
     public function updated($propertyName)
