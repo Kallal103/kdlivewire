@@ -10,6 +10,8 @@
     <title>Livewire</title>
     <livewire:styles />
     <livewire:scripts />
+    <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js"
+    data-turbolinks-eval="false"></script>
 </head>
 <body class="flex justify-center">
     <div class="w-10/12 my-10 flex">

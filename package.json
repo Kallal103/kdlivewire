@@ -21,6 +21,9 @@
         "sass-loader": "^8.0.0",
         "tailwindcss": "^2.0.2",
         "vue-template-compiler": "^2.6.12"
-
+    },
+    "dependencies": {
+        "livewire-turbolinks": "^0.1.1",
+        "turbolinks": "^5.2.0"
     }
 }
