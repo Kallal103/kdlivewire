@@ -7,6 +7,7 @@
                 <div class="flex flex-wrap w-10/12">
                     <input type="name" class="p-2 rounded border shadow-sm w-full" wire:model="form.name"
                         placeholder="Name" />
+                    @error('form.name') <span class=" text-red-500 text-xs">{{ $message }}</span> @enderror
 
                 </div>
             </div>
@@ -15,6 +16,7 @@
                     <input type="email" class="p-2 rounded border shadow-sm w-full" wire:model="form.email"
                      placeholder="Email"
                         />
+                    @error('form.email') <span class=" text-red-500 text-xs">{{ $message }}</span> @enderror
 
                 </div>
             </div>
@@ -23,12 +25,13 @@
                     <input type="password" class="p-2 rounded border shadow-sm w-full" wire:model="form.password"
                      placeholder="Password"
                          />
+                @error('form.password') <span class=" text-red-500 text-xs">{{ $message }}</span> @enderror
 
                 </div>
             </div>
             <div class="flex justify-around my-8">
                 <div class="flex flex-wrap w-10/12">
-                    <input type="text" class="p-2 rounded border shadow-sm w-full" wire:model="form.password_confirmation"
+                    <input type="password" class="p-2 rounded border shadow-sm w-full" wire:model="form.password_confirmation"
                     placeholder="Confirm Password"
                         />
                 </div>

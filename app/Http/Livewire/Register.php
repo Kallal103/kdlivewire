@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\User;
 use Livewire\Component;
 
 class Register extends Component
@@ -21,7 +22,9 @@ class Register extends Component
             'form.password' => 'required|confirmed'
 
         ]);
-        dd($this->form);
+        User::create($this->form);
+        return redirect(route('login'));
+        //dd($this->form);
     }
     public function render()
     {
